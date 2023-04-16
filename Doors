@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-getgenv().Theme = "DarkTheme"
+getgenv().Theme = "BloodTheme"
 --[[
     LightTheme
     DarkTheme
@@ -78,7 +78,12 @@ do local v0=0;local v1;local v2;local v3;local v4;local v5;local v6;local v7;loc
 --Misc Devs (also very cool people): RealCat, Muhammad and Crow With a Gun
 end)
 Section:NewButton("Birthday Mode", "This Is Not The Gui", function()
-	```loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/BirthdayModeDOORS/main/BirthdayModeScript'))()```
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/BirthdayModeDOORS/main/BirthdayModeScript'))()
+end)
+local Tab = Window:NewTab("ToggleUI")
+local Section = Tab:NewSection("Keyboard And ToggleUI")
+Section:NewButton("keyboard", "No Deskripsion", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
 end)
 Section:NewKeybind("Toggle ui", "makes the gui invisible, press again to make it visible", Enum.KeyCode.RightShift, function()
 	Library:ToggleUI()
